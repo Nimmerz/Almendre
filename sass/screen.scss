@@ -337,32 +337,37 @@ a {
 }
 
 .select-lang {
-  width: 40px;
-  background: url("../images/header/triangle.png") no-repeat right center;
+  width: 60px;
+  background: url("../images/header/triangle.png") no-repeat right;
+  background-color: none; 
   border: none;
-  color: #fff;
-  font-weight: 400;
-  font-size: 15px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  &:hover {
+  	color: #00adc3;
+  }
 }
-
+select{
+   vertical-align: baseline;
+}
 .header-fixed.active .select-lang {
   color: #4d4d4d;
 }
 
 .lang {
   position: relative;
+  color: #bdbdbd;
+  font-size: 14px;
   &:before {
     content: '';
     display: block;
     position: absolute;
-    left: -15px;
+    left: -10px;
     top: 6px;
     height: 15px;
     width: 1px;
-    background: #fff;
+    background: #bdbdbd;
   }
 }
 
