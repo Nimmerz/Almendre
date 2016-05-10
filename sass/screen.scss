@@ -489,7 +489,7 @@ select{
     font-size: 20px;
     font-weight: 500;
     &:after {
-      width: 100%;
+      width: 100%; 
     }
   }
   p {
@@ -521,6 +521,16 @@ select{
   text-align: left;
 }
 
+.small-title-block-second {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #353535;
+  font-size: 28px;
+  font-weight: 300;
+  text-align: left;
+}
+
+
 .title-block {
   display: inline-block;
   margin-bottom: 18px;
@@ -536,6 +546,14 @@ select{
   content: '';
   display: block;
   width: 80px;
+  height: 3px;
+  margin: 17px 0 0;
+  background: #009e00;
+}
+
+.small-title-block-second:after {
+  content: '';
+  display: block;
   height: 3px;
   margin: 17px 0 0;
   background: #009e00;
@@ -666,6 +684,7 @@ a.btn-orange:hover, .btn-orange:hover {
     display: table-cell;
     width: 100%;
     vertical-align: middle;
+    -webkit-border-radius: 3px; 
   }
   .wrap-desc {
     display: table-cell;
@@ -675,7 +694,7 @@ a.btn-orange:hover, .btn-orange:hover {
   }
   img {
     width: 100%;
-    height: 100%;
+    height: 100%; 
   }
   .small-title-block:after {
     margin-left: 0;
@@ -1124,14 +1143,14 @@ a.email {
     border-radius: 3px;
     &:before {
       content: '';
-      display: block;
+      display: none;
       position: absolute;
       right: 0;
       top: 0;
       bottom: 0;
       left: 0;
-      background: rgba(0, 0, 0, 0.4);
-      border-radius: 3px;
+      background-color:rgba(0,0,0,0.3);
+      opacity:0.12; 
     }
   }
   .wrap-shadow {
@@ -1141,8 +1160,13 @@ a.email {
     -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+    -webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+       -o-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+          transition: all 0.3s ease;     
     &:before {
-      display: none;
+    	display: block;
     }
   }
   img {
@@ -1342,9 +1366,13 @@ a.email {
 
 @media screen and (max-width: 1100px) {
   .list-info {
-    .wrap-img {
-      width: 56%;
+    .wrap-img,  {
+      width: 85%; 
     }
+  .wrap-img1 {
+    width: 85%;
+    margin-left: 15%;
+  }  
     .wrap-desc {
       width: 44%;
     }
@@ -1400,7 +1428,7 @@ a.email {
       bottom: 20px;
       width: 380px;
       height: auto;
-      background: #fff;
+      background: #fff; 
     }
     li:nth-child(2n) .wrap-desc {
       right: auto;
@@ -1408,6 +1436,10 @@ a.email {
     }
     .wrap-img {
       width: 75%;
+    }
+     .wrap-img1 {
+      width: 75%;
+      margin-left: 25%; 
     }
     .desc {
       display: table;
@@ -1451,15 +1483,6 @@ a.email {
   .header {
     background-size: cover !important;
   }
-  .list-info {
-    .wrap-desc {
-      position: initial;
-      width: 100%;
-    }
-    .wrap-img {
-      display: none;
-    }
-  }
   .footer {
     padding-top: 27px;
     padding-bottom: 27px;
@@ -1487,6 +1510,7 @@ a.email {
     bottom: auto;
     right: auto;
     max-width: none;
+    text-align: center;
   }
   .btn-back-top {
     bottom: 90px;
@@ -1498,7 +1522,41 @@ a.email {
     right: 10px;
   }
 }
-
+@media (max-width: 845px) {
+  .list-info {
+    .wrap-desc {
+      top: 10px;
+      width: 410px;
+      }
+    }
+}
+@media (max-width: 730px) {
+  .list-info {
+    .wrap-desc {
+      top: 2px;
+      width: 495px;
+      }
+    }
+}
+@media (max-width:600px) {
+  .list-info {
+        .wrap-img {
+      display: none;
+    }
+      .wrap-img1 {
+      display: none;
+    }
+  }
+    .list-info {
+    .wrap-desc {
+      position: initial;
+      width: 100%;
+    }
+  }
+     .list-info {
+      padding: 20px 0; 
+    }
+}
 // adding header food 
 
 .prod-flex {
@@ -1530,3 +1588,56 @@ nav ul li ul li a {
 	color:#444; 
 	margin: 0;
 } 
+
+  .jcarousel img {
+    	-webkit-border-radius: 4px; 
+    	border-radius: 4px; 
+    } 
+
+ @media (max-width: 767px) {
+ 	.small-title-block:after {
+ 		width: 100%;
+ 	}
+ 	 .slider-home {
+ 	 	text-align: center;
+ 	 	.title-block {
+ 	 		margin-left: 0;
+ 	 		&:after {
+				width: 100%;
+ 	 		}
+ 	 	}
+    }
+     	 .response-contact {
+ 	 	display: flex;
+ 	 	-webkit-flex-direction: column;
+ 	 	-ms-flex-direction: column;
+ 	 	flex-direction: column;
+ 	 	-webkit-align-items: center;
+ 	 	    align-items: center;    
+ 	 	    .text-form {
+ 	 	    	text-align: center;
+ 	 	    	padding-bottom: 20px; 
+ 	 	    }
+ 	 	 .submit-box {
+    			margin-left: 18%;	 
+			}
+		.wpcf7-form-control, .wpcf7-submit, .btn-orange {
+	 	        margin: 0;
+	 	    }   
+ 	 
+ 	 }	  
+
+ }
+
+ @media (max-width: 540px) {
+ 	.submit-box {
+    	margin-left: 12%;	 
+	}
+ }
+
+  @media (max-width: 500px) {
+ 	.submit-box {
+    	margin-left: 5%!important;	 
+	}
+ }
+ 
