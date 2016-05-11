@@ -209,7 +209,7 @@ a {
 .products .header {
   height: 400px;
   background: url("../images/header/bg_product.jpg") no-repeat center top;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .food {
@@ -251,15 +251,20 @@ a {
     z-index: 10;
   }
 }
-
+.pad-class {
+  padding-top: 12px;
+  @media (max-width: 767px) {
+    padding-top: 0;
+  } 
+}
 .header-fixed {
   position: fixed;
   width: 100%;
-  padding-top: 30px;
+  padding-top: 15px;
   &.active {
     top: 0;
-    padding: 15px 0;
     background: #fff;
+    height: 125px; 
     -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.3);
@@ -337,7 +342,7 @@ a {
 }
 
 .select-lang {
-  width: 60px;
+  width: 65px;
   background: url("../images/header/triangle.png") no-repeat right;
   background-color: none; 
   border: none;
@@ -426,7 +431,7 @@ select{
       display: block;
       height: 3px;
       margin-top: 12px;
-      background: #009e00;
+      background: #00adc3;
     }
   }
 }
@@ -474,9 +479,31 @@ select{
     vertical-align: top;
     border-radius: 3px;
     text-align: left;
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    position: relative;
+    &:before {
+            content: '';
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            background-color:rgba(0,0,0,0.3);
+            opacity:0.12; 
+        }  
+    &:hover {
+    -webkit-box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+       -o-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+          transition: all 0.3s ease;      
+        &:before {
+          display: block;
+        } 
+        }
     &:nth-child(3n) {
       margin-right: 0;
     }
@@ -487,7 +514,7 @@ select{
   .small-title-block {
     padding: 25px 25px 0;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     &:after {
       width: 100%; 
     }
@@ -548,7 +575,7 @@ select{
   width: 80px;
   height: 3px;
   margin: 17px 0 0;
-  background: #009e00;
+  background: #00adc3;
 }
 
 .small-title-block-second:after {
@@ -556,7 +583,7 @@ select{
   display: block;
   height: 3px;
   margin: 17px 0 0;
-  background: #009e00;
+  background: #00adc3;
 }
 
 .title-block:after {
@@ -565,7 +592,7 @@ select{
   width: 80px;
   height: 3px;
   margin: 17px 0 0;
-  background: #009e00;
+  background: #00adc3;
   margin-left: 3px;
 }
 
@@ -634,7 +661,7 @@ a.btn-orange, .btn-orange {
   margin: 0 auto;
   text-align: center;
   color: #fff;
-  background: #ff5100;
+  background: #00adc3;
   font-size: 18px;
   text-decoration: none;
   border-radius: 30px;
@@ -649,6 +676,7 @@ a.btn-orange:hover, .btn-orange:hover {
   -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
+  opacity: 0.8;     
 }
 
 .btn-back-top {
@@ -1094,6 +1122,7 @@ a.email {
   }
 }
 
+ 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -1369,6 +1398,8 @@ a.email {
     .wrap-img,  {
       width: 85%; 
     }
+
+
   .wrap-img1 {
     width: 85%;
     margin-left: 15%;
@@ -1434,13 +1465,7 @@ a.email {
       right: auto;
       left: 0;
     }
-    .wrap-img {
-      width: 75%;
-    }
-     .wrap-img1 {
-      width: 75%;
-      margin-left: 25%; 
-    }
+ 
     .desc {
       display: table;
       padding: 20px 40px;
@@ -1584,7 +1609,7 @@ nav ul li ul li {
 	}
 nav ul li ul li a {
 	display:block;
-	padding:15px 0 15px 0;
+	padding:13px 0 0 0;
 	color:#444; 
 	margin: 0;
 } 
@@ -1640,4 +1665,5 @@ nav ul li ul li a {
     	margin-left: 5%!important;	 
 	}
  }
+ 
  
