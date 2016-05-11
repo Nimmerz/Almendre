@@ -459,7 +459,7 @@ select{
     color: #fff;
     text-decoration: none;
     &:hover:after {
-      background: #009e00;
+      background: #00adc3;
     }
   }
   .active a:after {
@@ -580,9 +580,10 @@ select{
 
 .small-title-block-second:after {
   content: '';
-  display: block;
+  display: flex;
+  width: 80px; 
   height: 3px;
-  margin: 17px 0 0;
+  margin: 17px 0 0 75px;;
   background: #00adc3;
 }
 
@@ -1039,6 +1040,15 @@ a.email {
 
 .wrap-innovations {
   margin: 70px auto 60px;
+  @media (max-width: 775px) {
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 0 15%;
+    .small-title-block {
+      text-align: center;
+    }
+  }
 }
 
 .list-img-innovations {
