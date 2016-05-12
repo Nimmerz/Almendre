@@ -417,7 +417,7 @@ select{
 }
 
 .wrap-title-page {
-  margin: 50px 0 70px;
+  margin: 70px 0 70px;
   text-align: center;
   h1 {
     position: relative;
@@ -426,13 +426,12 @@ select{
     font-size: 42px;
     font-weight: 600;
     color: #fff;
-    &:after {
-      content: '';
-      display: block;
-      height: 3px;
-      margin-top: 12px;
-      background: #00adc3;
-    }
+  }
+  span {
+    color: #f7f7f7;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 24px;
   }
 }
 
@@ -469,7 +468,14 @@ select{
 
 .list-item {
   padding-bottom: 20px;
+  margin-top: 410px;
   text-align: center;
+  @media (max-width: 1200px) {
+     margin-top: 380px;
+  }
+    @media (max-width: 991px) {
+     margin-top: 320px;
+  }
   li {
     overflow: hidden;
     display: inline-block;
@@ -713,7 +719,6 @@ a.btn-orange:hover, .btn-orange:hover {
     display: table-cell;
     width: 100%;
     vertical-align: middle;
-    -webkit-border-radius: 3px; 
   }
   .wrap-desc {
     display: table-cell;
@@ -857,8 +862,12 @@ a.btn-orange:hover, .btn-orange:hover {
   background: #9c9a9a;
   border: none;
   &.active {
-    background: #772a00;
+    background: #00adc3;
   }
+}
+
+.carousel-indicators {
+  z-index: 5;
 }
 
 .wrap-slider-product > .container {
@@ -907,6 +916,9 @@ a.btn-orange:hover, .btn-orange:hover {
 .list-contact {
   padding-top: 45px;
   padding-bottom: 45px;
+  @media (max-width: 767px) {
+    text-align: center;
+  }
   .title-contact {
     display: block;
     color: #353535;
@@ -943,7 +955,7 @@ a.btn-orange:hover, .btn-orange:hover {
 a.email {
   font-size: 16px;
   font-weight: 500;
-  color: #ff5100;
+  color: #00adc3;
   text-decoration: none;
 }
 
@@ -1688,4 +1700,155 @@ nav ul li ul li a {
 	}
  }
  
+
+// Navigation Variables
+$content-width: 1000px;
+$breakpoint: 800px;
+$nav-height: 70px;
+$nav-background: #262626;
+$nav-font-color: #ffffff;
+$link-hover-color: #2581DC;
+
+
+ .adding-nav {
+  width: 100%;
+   min-height: 85px;
+   background-color: #f2f2f2;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-top: 22%; 
+  @media (min-width: 1500px) {
+     margin-top: 20%; 
+  }
+    @media (min-width: 1680px) {
+     margin-top: 17%; 
+  }
+     @media (max-width: 1300px) {
+     margin-top: 25%; 
+  }
+       @media (max-width: 1110px) {
+     margin-top: 30%; 
+  }
+       @media (max-width: 945px) {
+     margin-top: 38%; 
+  }
+         @media (max-width: 767px) {
+     margin-top: 45%; 
+  }
+          @media (max-width: 504px) {
+     margin-top: 55%; 
+  }
+            @media (max-width: 420px) {
+     margin-top: 62%; 
+  }
+    .main-nav a {
+      color: #1d1d1d;
+      font-size: 16px;
+      font-weight: 400;
+    }
+nav {
+  float: right;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    li {
+      margin: 0;      
+      position: relative;
+      a,
+      a:visited {
+        display: block;
+        padding: 0 20px;
+        line-height: 30px;
+        text-decoration: none;
+      }  
+    }
+  }
+}    
+@media only screen and (max-width: $breakpoint) {
+  // Hamburger nav visible on mobile only
+  .nav-mobile {
+    display: block;
+  }
+  nav {
+   width: 100%;
+    padding: 60 0 10px;
+    ul {
+      display: none;
+      padding: 40px 0;
+      li {
+        float: none; 
+        a {
+          line-height: 30px;
+          text-align: center; 
+        }
+        ul li a {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+  .nav-dropdown {
+    position: static;
+  }
+}
+@media screen and (min-width: $breakpoint) {
+  .nav-list {
+    display: block !important;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+  span,
+  span:before,
+  span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 32px;
+    background: #1d1d1d;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+  }
+  span:before {
+    top: -10px;
+  }
+  span:after {
+    bottom: -10px;
+  }
+  &.active span {
+    background-color: transparent;
+    &:before,
+    &:after {
+      top: 0;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+}
+
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: $nav-height;
+  width: $nav-height;
+}
  
