@@ -678,15 +678,9 @@ a.btn-orange, .btn-orange {
   border-radius: 30px;
   border: none;
   transition: .3s;
-  -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.4);
 }
 
 a.btn-orange:hover, .btn-orange:hover {
-  -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
   opacity: 0.8;     
 }
 
@@ -703,9 +697,6 @@ a.btn-orange:hover, .btn-orange:hover {
   text-indent: -9999px;
   &:hover {
     background-color: #00adc3;
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -876,30 +867,33 @@ a.btn-orange:hover, .btn-orange:hover {
 
 .carousel-indicators {
   z-index: 5;
+  @media (min-width: 767px) {
+    left: 13%;
+  }
 }
 
 .wrap-slider-product > .container {
   position: relative;
-  &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    right: 15px;
-    bottom: -30px;
-    width: 155px;
-    height: 168px;
-    background: url("../images/content/leave1.png") no-repeat;
-  }
-  &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    right: -40px;
-    top: 0;
-    width: 106px;
-    height: 150px;
-    background: url("../images/content/leave2.png") no-repeat;
-  }
+  // &:after {
+  //   content: '';
+  //   display: block;
+  //   position: absolute;
+  //   right: 15px;
+  //   bottom: -30px;
+  //   width: 155px;
+  //   height: 168px;
+  //   background: url("../images/content/leave1.png") no-repeat;
+  // }
+  // &:before {
+  //   content: '';
+  //   display: block;
+  //   position: absolute;
+  //   right: -40px;
+  //   top: 0;
+  //   width: 106px;
+  //   height: 150px;
+  //   background: url("../images/content/leave2.png") no-repeat;
+  // }
 }
 
 .wrap-leave {
@@ -1465,6 +1459,15 @@ a.email {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .list-info  .wrap-img1 {
+    width: 94%;
+    margin-left: 16%;
+  }
+   .list-info  .wrap-img {
+       width: 94%;
+   }
+  }  
 @media screen and (max-width: 969px) {
   .faq .header {
     background-size: 100%;
@@ -1867,5 +1870,43 @@ $link-hover-color: #2581DC;
     display: flex!important;
     -webkit-justify-content: center;
     justify-content: center; 
+  }
+}
+
+
+//products add classes 
+
+.slider-home .btn-orange {
+  margin-top: 30px;
+  margin-bottom: 130px;  
+}
+
+.image-slider {
+  background: url("../images/content/slider-image.png") center no-repeat;
+  min-height: 335px; 
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  padding-top: 12%; 
+   &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+}
+
+.bg-grey .container, .bg-grey .row {
+  margin: 0;
+  padding: 0;
+  .col-md-8, .col-lg-8 {
+    @media (min-width: 767px) { 
+    padding-left: 0
+    }
   }
 }
