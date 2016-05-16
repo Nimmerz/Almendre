@@ -1850,12 +1850,9 @@ $link-hover-color: #2581DC;
 @media (max-width: 767px) {
   .header .container-fluid>.navbar-collapse .main-nav {
     background: #FFF;
-    width: 90px;
-    -webkit-border-radius: 3px; 
-     border-radius: 3px;  
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    width: 800px;
+    margin-top: 45px;
+            
     li:last-child {
       padding-bottom: 10px;
     }
@@ -1888,6 +1885,18 @@ $link-hover-color: #2581DC;
   z-index: 5;
   text-align: center;
   padding-top: 12%; 
+  @media (max-width: 990px ) {
+      padding-top: 20%;
+      background-size: cover; 
+  }
+    @media (max-width: 525px ) {
+      padding-top: 30%;
+      background-size: cover; 
+  }
+      @media (max-width: 414px ) {
+      padding-top: 40%;
+      background-size: cover; 
+  }
    &:before {
     content: '';
     display: block;
@@ -1901,12 +1910,44 @@ $link-hover-color: #2581DC;
   }
 }
 
-.bg-grey .container, .bg-grey .row {
+.bg-grey1 .container, .bg-grey1 .row {
   margin: 0;
   padding: 0;
+
   .col-md-8, .col-lg-8 {
     @media (min-width: 767px) { 
-    padding-left: 0
+    padding-left: 0;
     }
   }
 }
+
+.bg-grey1 {
+    background: #f4f4f4;
+      @media (max-width: 990px ) {
+      padding-left: 11%; 
+  }
+        @media (max-width: 990px ) {
+      padding-left: 8%; 
+  }
+          @media (max-width: 990px ) {
+      padding-left: 5%; 
+  }
+            @media (max-width: 835px ) {
+      padding-left: 2%; 
+  }
+              @media (max-width: 767px ) {
+      padding-left: 0; 
+      .products-block .row {
+        text-align: center;
+      }
+  }
+}
+
+ @media (max-width: 767px ) {
+     .products-block .row {
+        text-align: center;
+        .title-block:after {
+          width: 100%;
+        }
+      }
+  }
