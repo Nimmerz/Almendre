@@ -232,12 +232,20 @@ a {
 }
 
 .food {
-  background: url("../images/content/bg_food.jpg") no-repeat top center; 
-  background-size: 1340px 420px;
-  .header:before {
-    height: 400px;
-    z-index: -1;
+  position: relative;
+  .header .top-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 410px;
+    width: 100%;   
   }
+  .header:before {
+    height: 410px;
+    z-index: 1; 
+  }
+
+
   .wrapper:after {
     height: 120px;
   }
@@ -440,6 +448,8 @@ select{
 .wrap-title-page {
   margin: 70px 0 70px;
   text-align: center;
+  position: relative;
+  z-index: 2; 
   h1 {
     position: relative;
     display: inline-block;
@@ -447,6 +457,7 @@ select{
     font-size: 42px;
     font-weight: 600;
     color: #fff;
+  
   }
   span {
     color: #f7f7f7;
@@ -492,10 +503,10 @@ select{
   margin-top: 41px;
   text-align: center;
   @media (max-width: 1200px) {
-     margin-top: 380px;
+     margin-top: 200px;
   }
     @media (max-width: 991px) {
-     margin-top: 320px;
+     margin-top: -320px;
   }
   li {
     overflow: hidden;
@@ -576,7 +587,6 @@ select{
 .small-title-block {
   display: inline-block;
   margin-bottom: 18px;
-  color: #fff;
   font-size: 28px;
   font-weight: 300;
   text-align: left;
@@ -1781,7 +1791,6 @@ $link-hover-color: #2581DC;
   justify-content: center;
   -webkit-align-items: center;
   align-items: center;
-  margin-top: 0; 
   .navbar-default .navbar-toggle .icon-bar {
      background-color: #4d4d4d;
   }
@@ -1854,29 +1863,27 @@ $link-hover-color: #2581DC;
       background: transparent; 
     }
   }
-  @media (min-width: 1500px) {
-     margin-top: 20%; 
+ 
+  @media (min-width: 1400px) {
+     margin-top: 12%; 
   }
     @media (min-width: 1680px) {
-     margin-top: 17%; 
+     margin-top: 10%; 
   }
-     @media (max-width: 1300px) {
-     margin-top: 25%; 
+     @media (max-width: 1400px) {
+     margin-top: 12%; 
   }
        @media (max-width: 1110px) {
-     margin-top: 30%; 
+     margin-top: 10%; 
   }
-       @media (max-width: 945px) {
-     margin-top: 38%; 
-  }
-         @media (max-width: 767px) {
-     margin-top: 45%; 
-  }
-          @media (max-width: 504px) {
-     margin-top: 55%; 
+          @media (max-width: 604px) {
+     margin-top: 4%; 
   }
             @media (max-width: 420px) {
-     margin-top: 62%; 
+     margin-top: -10%; 
+  }
+              @media (max-width: 360px) {
+     margin-top: -17%; 
   }
   nav {
   float: right;
@@ -2049,8 +2056,19 @@ $link-hover-color: #2581DC;
  /* CSS - Slide 2 */
 #slide-3 .bcg {
   background-image:url('../images/content/parallax-bg.png');
-  min-height: 550px; 
-}
+  min-height: 600px; 
+  position: relative;
+     &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }  
+ }
 
  /* Slide 3 */
 .curtainContainer {
