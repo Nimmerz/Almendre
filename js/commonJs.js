@@ -18,7 +18,7 @@ $(document).ready(function() {
         var $this = $('#fix-header'),
             posHeader = $this.offset().top;
 
-        if(posHeader > 30) {
+        if(posHeader > 10) {
             if(!$this.hasClass('active')) {
                 $this.addClass('active');
             }
