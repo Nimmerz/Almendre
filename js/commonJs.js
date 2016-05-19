@@ -10,6 +10,10 @@ $(document).ready(function() {
         }, 500);
     });
 
+     $('.wrap-main-nav .navbar-toggle').click( function() {
+        $('#fix-header').toggleClass('active');
+    });
+ 
     function loadDocument() {
         var $this = $('#fix-header'),
             posHeader = $this.offset().top;
@@ -61,16 +65,11 @@ $(document).ready(function() {
     function () {
     $('ul', this).stop().slideUp(400);
       });
-
-
 });
 
-( function( $ ) {
-    // Init Skrollr
-    var s = skrollr.init({
-        render: function(data) {
-            //Debugging - Log the current scroll position.
-            //console.log(data.curTop);
-        }
-    });
-} )( jQuery );
+
+
+
+
+
+

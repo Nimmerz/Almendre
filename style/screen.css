@@ -909,7 +909,7 @@ a.btn-orange:hover, .btn-orange:hover {
   z-index: 9999;
   width: 50px;
   height: 50px;
-  background: url("../images/content/back_top.png") no-repeat center #dbdbdb;
+  background: url("../images/content/back_top.png") no-repeat center #383838;
   border-radius: 50px;
   border: none;
   text-indent: -9999px;
@@ -1097,8 +1097,8 @@ a.btn-orange:hover, .btn-orange:hover {
 @media (min-width: 767px) {
   /* line 911, ../sass/screen.scss */
   .carousel-indicators {
-    left: 42%;
-    bottom: 20%;
+    left: 50%;
+    bottom: -10%;
   }
 }
 @media (max-width: 1200px) {
@@ -2177,61 +2177,43 @@ nav ul li ul li a {
 @media (min-width: 1400px) {
   /* line 1785, ../sass/screen.scss */
   .adding-nav {
-    margin-top: 12%;
-  }
-}
-@media (min-width: 1680px) {
-  /* line 1785, ../sass/screen.scss */
-  .adding-nav {
-    margin-top: 10%;
+    margin-top: 80px;
   }
 }
 @media (max-width: 1400px) {
   /* line 1785, ../sass/screen.scss */
   .adding-nav {
-    margin-top: 12%;
+    margin-top: 80px;
   }
 }
-@media (max-width: 1110px) {
+@media (max-width: 629px) {
   /* line 1785, ../sass/screen.scss */
   .adding-nav {
-    margin-top: 10%;
+    margin-top: 28px;
   }
 }
-@media (max-width: 604px) {
+@media (max-width: 347px) {
   /* line 1785, ../sass/screen.scss */
   .adding-nav {
-    margin-top: 4%;
+    margin-top: -48px;
   }
 }
-@media (max-width: 420px) {
-  /* line 1785, ../sass/screen.scss */
-  .adding-nav {
-    margin-top: -10%;
-  }
-}
-@media (max-width: 360px) {
-  /* line 1785, ../sass/screen.scss */
-  .adding-nav {
-    margin-top: -17%;
-  }
-}
-/* line 1888, ../sass/screen.scss */
+/* line 1879, ../sass/screen.scss */
 .adding-nav nav {
   float: right;
 }
-/* line 1890, ../sass/screen.scss */
+/* line 1881, ../sass/screen.scss */
 .adding-nav nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 1894, ../sass/screen.scss */
+/* line 1885, ../sass/screen.scss */
 .adding-nav nav ul li {
   margin: 0;
   position: relative;
 }
-/* line 1897, ../sass/screen.scss */
+/* line 1888, ../sass/screen.scss */
 .adding-nav nav ul li a,
 .adding-nav nav ul li a:visited {
   display: block;
@@ -2240,89 +2222,104 @@ nav ul li ul li a {
 }
 
 @media (max-width: 767px) {
-  /* line 1909, ../sass/screen.scss */
+  /* line 1900, ../sass/screen.scss */
   .header .container-fluid > .navbar-collapse .main-nav {
     background: #FFF;
     width: 800px;
     margin-top: 45px;
     margin-right: -15px;
   }
-  /* line 1915, ../sass/screen.scss */
+  /* line 1906, ../sass/screen.scss */
   .header .container-fluid > .navbar-collapse .main-nav li:last-child {
     padding-bottom: 10px;
   }
-  /* line 1918, ../sass/screen.scss */
+  /* line 1909, ../sass/screen.scss */
   .header .container-fluid > .navbar-collapse .main-nav a {
     color: #4d4d4d;
   }
 }
 @media (min-width: 767px) {
-  /* line 1925, ../sass/screen.scss */
+  /* line 1916, ../sass/screen.scss */
   #mainNavbar {
     display: flex !important;
     -webkit-justify-content: center;
     justify-content: center;
   }
 }
-/* line 1935, ../sass/screen.scss */
+/* line 1926, ../sass/screen.scss */
 .slider-home .btn-orange {
   margin-top: 30px;
   margin-bottom: 130px;
 }
 
-/* line 1940, ../sass/screen.scss */
+/* line 1931, ../sass/screen.scss */
 .bg-grey1 .container, .bg-grey1 .row {
   margin: 0;
   padding: 0;
 }
 @media (max-width: 1100px) {
-  /* line 1940, ../sass/screen.scss */
+  /* line 1931, ../sass/screen.scss */
   .bg-grey1 .container, .bg-grey1 .row {
     padding-bottom: 20px;
     padding-top: 20px;
   }
 }
 @media (max-width: 767px) {
-  /* line 1940, ../sass/screen.scss */
+  /* line 1931, ../sass/screen.scss */
   .bg-grey1 .container, .bg-grey1 .row {
     padding-right: 30px;
     padding-left: 30px;
   }
 }
 @media (max-width: 414px) {
-  /* line 1940, ../sass/screen.scss */
+  /* line 1931, ../sass/screen.scss */
   .bg-grey1 .container, .bg-grey1 .row {
     padding-right: 5px;
     padding-left: 5px;
   }
 }
 @media (min-width: 767px) {
-  /* line 1955, ../sass/screen.scss */
+  /* line 1946, ../sass/screen.scss */
   .bg-grey1 .container .col-md-8, .bg-grey1 .container .col-lg-8, .bg-grey1 .row .col-md-8, .bg-grey1 .row .col-lg-8 {
     padding-left: 0;
   }
 }
 
-/* line 1962, ../sass/screen.scss */
+/* line 1953, ../sass/screen.scss */
 .bg-grey1 {
   background: #f4f4f4;
 }
 @media (max-width: 990px) {
-  /* line 1962, ../sass/screen.scss */
+  /* line 1953, ../sass/screen.scss */
   .bg-grey1 {
     padding-left: 9%;
   }
 }
 @media (max-width: 767px) {
-  /* line 1962, ../sass/screen.scss */
+  /* line 1953, ../sass/screen.scss */
   .bg-grey1 {
     padding-left: 0;
   }
 }
 
-/* line 1982, ../sass/screen.scss */
+/* line 1973, ../sass/screen.scss */
 .products-block {
   height: 0px;
+  padding-top: 30px;
+}
+@media (max-width: 768px) {
+  /* line 1973, ../sass/screen.scss */
+  .products-block {
+    padding-top: 0;
+    margin-top: -80px;
+  }
+}
+@media (max-width: 414px) {
+  /* line 1973, ../sass/screen.scss */
+  .products-block {
+    padding-top: 30px;
+    margin-top: 0;
+  }
 }
 /* line 1984, ../sass/screen.scss */
 .products-block .container {
@@ -2333,56 +2330,68 @@ nav ul li ul li a {
 
 /* line 1990, ../sass/screen.scss */
 .products-block .row {
-  margin-top: -100px;
+  margin-top: -150px;
   padding-top: 0;
   padding-bottom: 0;
 }
-/* line 1994, ../sass/screen.scss */
+@media (max-width: 767px) {
+  /* line 1990, ../sass/screen.scss */
+  .products-block .row {
+    margin-top: -100px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 1990, ../sass/screen.scss */
+  .products-block .row {
+    margin-top: -100px;
+  }
+}
+/* line 2000, ../sass/screen.scss */
 .products-block .row .title-block {
   margin-left: 1%;
 }
 @media (max-width: 767px) {
-  /* line 1994, ../sass/screen.scss */
+  /* line 2000, ../sass/screen.scss */
   .products-block .row .title-block {
     margin-left: 0;
   }
 }
 
 @media (max-width: 767px) {
-  /* line 2004, ../sass/screen.scss */
+  /* line 2010, ../sass/screen.scss */
   .products-block .row {
     text-align: center;
   }
-  /* line 2006, ../sass/screen.scss */
+  /* line 2012, ../sass/screen.scss */
   .products-block .row .title-block:after {
     width: 100%;
   }
 }
-/* line 2012, ../sass/screen.scss */
+/* line 2018, ../sass/screen.scss */
 .products .wrapper {
   min-height: 60%;
 }
 @media (max-width: 1024px) {
-  /* line 2012, ../sass/screen.scss */
+  /* line 2018, ../sass/screen.scss */
   .products .wrapper {
     min-height: 60%;
   }
 }
 @media (max-width: 768px) {
-  /* line 2012, ../sass/screen.scss */
+  /* line 2018, ../sass/screen.scss */
   .products .wrapper {
     min-height: 60%;
   }
 }
 @media (max-width: 414px) {
-  /* line 2012, ../sass/screen.scss */
+  /* line 2018, ../sass/screen.scss */
   .products .wrapper {
     min-height: 55%;
   }
 }
 
 /* CSS */
-/* line 2028, ../sass/screen.scss */
+/* line 2034, ../sass/screen.scss */
 .hsContainer {
   display: table;
   table-layout: fixed;
@@ -2393,7 +2402,7 @@ nav ul li ul li a {
   opacity: 0;
 }
 
-/* line 2037, ../sass/screen.scss */
+/* line 2043, ../sass/screen.scss */
 .hsContent {
   max-width: 450px;
   margin: -150px auto 0 auto;
@@ -2404,7 +2413,7 @@ nav ul li ul li a {
   text-align: center;
 }
 
-/* line 2046, ../sass/screen.scss */
+/* line 2052, ../sass/screen.scss */
 .bcg {
   background-position: center center;
   background-repeat: no-repeat;
@@ -2415,13 +2424,13 @@ nav ul li ul li a {
 }
 
 /* CSS - Slide 2 */
-/* line 2057, ../sass/screen.scss */
+/* line 2063, ../sass/screen.scss */
 #slide-3 .bcg {
   background-image: url("../images/content/parallax-bg.png");
   min-height: 600px;
   position: relative;
 }
-/* line 2061, ../sass/screen.scss */
+/* line 2067, ../sass/screen.scss */
 #slide-3 .bcg:before {
   content: '';
   display: block;
@@ -2431,17 +2440,18 @@ nav ul li ul li a {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
+  height: 600px;
 }
 
 /* Slide 3 */
-/* line 2074, ../sass/screen.scss */
+/* line 2081, ../sass/screen.scss */
 .curtainContainer {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-/* line 2078, ../sass/screen.scss */
+/* line 2085, ../sass/screen.scss */
 .curtainContainer .curtain {
   width: 300%;
   height: 1px;
@@ -2452,7 +2462,7 @@ nav ul li ul li a {
   opacity: 0;
 }
 
-/* line 2084, ../sass/screen.scss */
+/* line 2091, ../sass/screen.scss */
 .curtainContainer .copy {
   position: absolute;
   bottom: 30%;

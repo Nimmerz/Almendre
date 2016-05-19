@@ -729,7 +729,7 @@ a.btn-orange:hover, .btn-orange:hover {
   z-index: 9999;
   width: 50px;
   height: 50px;
-  background: url("../images/content/back_top.png") no-repeat center #dbdbdb;
+  background: url("../images/content/back_top.png") no-repeat center #383838;
   border-radius: 50px;
   border: none;
   text-indent: -9999px;
@@ -911,8 +911,8 @@ a.btn-orange:hover, .btn-orange:hover {
 .carousel-indicators {
   z-index: 5;
   @media (min-width: 767px) {
-    left: 42%;
-    bottom: 20%;
+    left: 50%;
+    bottom: -10%;
   }
    @media (max-width: 1200px) {
     left: 50%;
@@ -1865,25 +1865,16 @@ $link-hover-color: #2581DC;
   }
  
   @media (min-width: 1400px) {
-     margin-top: 12%; 
-  }
-    @media (min-width: 1680px) {
-     margin-top: 10%; 
+     margin-top: 80px;  
   }
      @media (max-width: 1400px) {
-     margin-top: 12%; 
+     margin-top: 80px; 
   }
-       @media (max-width: 1110px) {
-     margin-top: 10%; 
+       @media (max-width: 629px) {
+     margin-top: 28px; 
   }
-          @media (max-width: 604px) {
-     margin-top: 4%; 
-  }
-            @media (max-width: 420px) {
-     margin-top: -10%; 
-  }
-              @media (max-width: 360px) {
-     margin-top: -17%; 
+         @media (max-width: 347px) {
+     margin-top: -48px; 
   }
   nav {
   float: right;
@@ -1981,6 +1972,15 @@ $link-hover-color: #2581DC;
  }
     .products-block {
       height: 0px;
+      padding-top: 30px; 
+        @media (max-width: 768px) {
+          padding-top: 0;
+          margin-top: -80px; 
+        } 
+        @media (max-width: 414px) {
+          padding-top: 30px;
+          margin-top: 0;
+        } 
       .container {
         height: 0px; 
         padding-top: 0;
@@ -1988,9 +1988,15 @@ $link-hover-color: #2581DC;
       } 
     }
     .products-block .row {
-      margin-top: -100px;  
+      margin-top: -150px;  
       padding-top: 0;
       padding-bottom: 0;
+      @media (max-width: 767px) {
+          margin-top: -100px;
+        } 
+        @media (min-width: 768px) {
+          margin-top: -100px;
+        }   
       .title-block {
         margin-left: 1%;
         @media (max-width: 767px) {
@@ -2067,6 +2073,7 @@ $link-hover-color: #2581DC;
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
+    height: 600px; 
   }  
  }
 
