@@ -11,7 +11,7 @@ $(document).ready(function() {
     });
 
      $('.wrap-main-nav .navbar-toggle').click( function() {
-        $('#fix-header').toggleClass('active');
+        $('#fix-header').addClass('active');
     });
  
     function loadDocument() {
