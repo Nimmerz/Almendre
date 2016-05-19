@@ -581,20 +581,26 @@ select{
 
 .box-info-company {
   position: relative;
-  padding-top: 200px;
+  padding-top: 200px; 
   padding-bottom: 70px;
-  text-align: center;
   min-height: 450px; 
   color: #FFF; 
   font-size: 24px;
   @media (max-width: 768px) {
     padding-top: 80px; 
+    text-align: center;
   }
   .small-title-block {
     font-size: 30px; 
   }
   .col-sm-6 {
     position: relative;
+  }
+  .col-md-6 {
+    padding-left: 8%; 
+     @media (max-width: 768px) {
+      padding-left: 0;
+     } 
   }
 }
 
@@ -610,7 +616,7 @@ select{
   display: inline-block;
   margin-bottom: 18px;
   color: #fff;
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 300;
   text-align: left;
 }
@@ -630,7 +636,7 @@ select{
 .small-title-block:after {
   content: '';
   display: block;
-  width: 80px;
+  width: 77px;
   height: 3px;
   margin: 17px 0 0;
   background: #00adc3;
@@ -639,10 +645,13 @@ select{
 .small-title-block-second:after {
   content: '';
   display: flex;
-  width: 80px; 
+  width: 77px; 
   height: 3px;
-  margin: 17px 0 0 75px;;
+  margin: 17px 0 0;
   background: #00adc3;
+  @media (max-width: 768px) {
+    margin: 17px 0 0 110px;
+  }
 }
 
 .title-block:after {
@@ -669,7 +678,9 @@ select{
   p {
     width: 90%;
     max-width: 450px;
-    margin: 0 auto;
+    @media (max-width: 768px) {
+      margin: 0 auto;
+    }
   }
 }
 
