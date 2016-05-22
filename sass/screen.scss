@@ -783,6 +783,9 @@ a.btn-orange:hover, .btn-orange:hover {
     width: 50%;
     padding: 50px 75px;
     vertical-align: middle;
+    @media (max-width: 1100px) {
+      padding: 50px 38px;
+    }
   }
   .wrap-desc1 {
     padding: 20px 75px!important;
