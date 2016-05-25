@@ -731,7 +731,7 @@ select {
 }
 /* line 568, ../sass/screen.scss */
 .list-item .small-title-block:after {
-  width: 100%;
+  width: 40px;
 }
 /* line 572, ../sass/screen.scss */
 .list-item p {
@@ -2423,94 +2423,123 @@ nav ul li ul li a {
 
 /* line 2072, ../sass/screen.scss */
 .products-block {
-  height: 0px;
-  padding-top: 30px;
+  min-height: 715px;
+  padding-top: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   /* line 2072, ../sass/screen.scss */
   .products-block {
-    padding-top: 0;
-    margin-top: -80px;
+    min-height: 850px;
+    margin-top: -130px;
   }
 }
-@media (max-width: 414px) {
+@media (max-width: 1100px) {
   /* line 2072, ../sass/screen.scss */
   .products-block {
-    padding-top: 30px;
-    margin-top: 0;
+    min-height: 1450px;
+    margin-top: -170px;
   }
 }
-/* line 2083, ../sass/screen.scss */
+@media (max-width: 990px) {
+  /* line 2072, ../sass/screen.scss */
+  .products-block {
+    min-height: 950px;
+    margin-top: 370px;
+  }
+}
+@media (max-width: 725px) {
+  /* line 2072, ../sass/screen.scss */
+  .products-block {
+    min-height: 1550px;
+    margin-top: 370px;
+  }
+}
+/* line 2091, ../sass/screen.scss */
 .products-block .container {
   height: 0px;
   padding-top: 0;
   padding-bottom: 0;
 }
 
-/* line 2089, ../sass/screen.scss */
+/* line 2097, ../sass/screen.scss */
 .products-block .row {
   margin-top: -150px;
   padding-top: 0;
   padding-bottom: 0;
 }
 @media (max-width: 767px) {
-  /* line 2089, ../sass/screen.scss */
+  /* line 2097, ../sass/screen.scss */
   .products-block .row {
     margin-top: -100px;
   }
 }
 @media (min-width: 768px) {
-  /* line 2089, ../sass/screen.scss */
+  /* line 2097, ../sass/screen.scss */
   .products-block .row {
     margin-top: -100px;
   }
 }
-/* line 2099, ../sass/screen.scss */
+/* line 2107, ../sass/screen.scss */
 .products-block .row .title-block {
   margin-left: 1%;
 }
 @media (max-width: 767px) {
-  /* line 2099, ../sass/screen.scss */
+  /* line 2107, ../sass/screen.scss */
   .products-block .row .title-block {
     margin-left: 0;
   }
 }
 
 @media (max-width: 767px) {
-  /* line 2109, ../sass/screen.scss */
+  /* line 2117, ../sass/screen.scss */
   .products-block .row {
     text-align: center;
   }
-  /* line 2111, ../sass/screen.scss */
+  /* line 2119, ../sass/screen.scss */
   .products-block .row .title-block:after {
     width: 100%;
   }
 }
-/* line 2117, ../sass/screen.scss */
+/* line 2127, ../sass/screen.scss */
+.products-block .list-item {
+  position: relative;
+}
+/* line 2129, ../sass/screen.scss */
+.products-block .list-item p {
+  height: 250px;
+}
+/* line 2133, ../sass/screen.scss */
+.products-block .slider-logo1 img {
+  position: absolute !important;
+  top: 16%;
+  left: 20%;
+}
+
+/* line 2141, ../sass/screen.scss */
 .products .wrapper {
   min-height: 60%;
 }
 @media (max-width: 1024px) {
-  /* line 2117, ../sass/screen.scss */
+  /* line 2141, ../sass/screen.scss */
   .products .wrapper {
     min-height: 60%;
   }
 }
 @media (max-width: 768px) {
-  /* line 2117, ../sass/screen.scss */
+  /* line 2141, ../sass/screen.scss */
   .products .wrapper {
     min-height: 60%;
   }
 }
 @media (max-width: 414px) {
-  /* line 2117, ../sass/screen.scss */
+  /* line 2141, ../sass/screen.scss */
   .products .wrapper {
     min-height: 55%;
   }
 }
 
 /* CSS */
-/* line 2133, ../sass/screen.scss */
+/* line 2157, ../sass/screen.scss */
 .hsContainer {
   display: table;
   table-layout: fixed;
@@ -2521,7 +2550,7 @@ nav ul li ul li a {
   opacity: 0;
 }
 
-/* line 2142, ../sass/screen.scss */
+/* line 2166, ../sass/screen.scss */
 .hsContent {
   max-width: 450px;
   margin: -150px auto 0 auto;
@@ -2532,7 +2561,7 @@ nav ul li ul li a {
   text-align: center;
 }
 
-/* line 2151, ../sass/screen.scss */
+/* line 2175, ../sass/screen.scss */
 .bcg {
   background-position: center center;
   background-repeat: no-repeat;
@@ -2543,13 +2572,13 @@ nav ul li ul li a {
 }
 
 /* CSS - Slide 2 */
-/* line 2162, ../sass/screen.scss */
+/* line 2186, ../sass/screen.scss */
 #slide-3 .bcg {
   background-image: url("../images/content/parallax-bg.png");
   min-height: 600px;
   position: relative;
 }
-/* line 2166, ../sass/screen.scss */
+/* line 2190, ../sass/screen.scss */
 #slide-3 .bcg:before {
   content: '';
   display: block;
@@ -2562,21 +2591,21 @@ nav ul li ul li a {
   height: 600px;
 }
 @media (max-width: 414px) {
-  /* line 2166, ../sass/screen.scss */
+  /* line 2190, ../sass/screen.scss */
   #slide-3 .bcg:before {
     height: 100%;
   }
 }
 
 /* Slide 3 */
-/* line 2183, ../sass/screen.scss */
+/* line 2207, ../sass/screen.scss */
 .curtainContainer {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-/* line 2187, ../sass/screen.scss */
+/* line 2211, ../sass/screen.scss */
 .curtainContainer .curtain {
   width: 300%;
   height: 1px;
@@ -2587,7 +2616,7 @@ nav ul li ul li a {
   opacity: 0;
 }
 
-/* line 2193, ../sass/screen.scss */
+/* line 2217, ../sass/screen.scss */
 .curtainContainer .copy {
   position: absolute;
   bottom: 30%;
@@ -2596,7 +2625,7 @@ nav ul li ul li a {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 2201, ../sass/screen.scss */
+  /* line 2225, ../sass/screen.scss */
   .footer-nav li, .main-nav li {
     float: none;
     margin-top: 15px;
