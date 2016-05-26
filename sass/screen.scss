@@ -40,7 +40,7 @@ button {
   padding: 0;
 }
 
-select, input, textarea, button {
+.select, input, textarea, button {
   font: 300 14px 'Source Sans Pro', sans-serif;
   vertical-align: middle;
 }
@@ -179,10 +179,16 @@ a {
 .small-size {
   height: 2000px!important; 
    @media (min-width: 1439px) {
-    min-height: 2199px!important; 
+    height: 2000px!important; 
   }
-  @media (max-width: 768px) {
-    height: 2099px!important; 
+  @media (max-width: 769px) {
+    height: 2500px!important; 
+  }
+    @media (max-width: 767px) {
+    height: 2100px!important; 
+  }
+   @media (max-width: 414px) {
+    height: 2000px!important; 
   }
 }
 
@@ -378,38 +384,19 @@ a {
   }
 }
 
-.select-lang {
-  width: 65px;
-  background: url("../images/header/triangle.png") no-repeat right;
-  background-color: none; 
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  &:hover {
-  	color: #00adc3;
-  }
-}
-select{
-   vertical-align: baseline;
-}
-.header-fixed.active .select-lang {
-  color: #4d4d4d;
-}
+
+ 
 
 .lang {
-  position: relative;
+  select {
+    display: none;
+  }
   color: #bdbdbd;
   font-size: 14px;
-  &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: -10px;
-    top: 6px;
-    height: 15px;
-    width: 1px;
-    background: #bdbdbd;
+  @media (max-width: 768px) {
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
   }
 }
 
@@ -687,17 +674,17 @@ select{
 .block-history {
   margin-bottom: 110px;
   background: url("../images/content/bg_history.jpg") no-repeat;
-  background-attachment: fixed;
   background-size: cover;
-  height: 750px;
-  .container {
-    position: relative;
-   
+  min-height: 750px;
+  position: relative;
+  @media (max-width: 768px) {
+    min-height: 900px;
   }
 }
 
 .wrap-history {
   position: absolute;
+  top: 30%;
   bottom: -40px;
   right: 0;
   max-width: 730px;
@@ -705,10 +692,19 @@ select{
   background: transparent;
   color: #fff;
   @media (max-width: 1050px) {
+    top: 20%;
     bottom: 100px;
   }
     @media (max-width: 950px) {
     bottom: 200px;
+  }
+    @media (max-width: 768px) {
+    top: 25%;
+    bottom: 100px;
+  }
+      @media (max-width: 414px) {
+    top: -4%;
+    bottom: 100px;
   }
   h2 {
     margin-bottom: 40px;
@@ -1934,8 +1930,8 @@ $link-hover-color: #2581DC;
   .header .container-fluid>.navbar-collapse .main-nav {
     background: #FFF;
     width: 768px;
-    margin-top: 45px;
-    margin-right: -15px;  
+    margin-top: 10px;
+    margin-right: -250px;  
 
             
     li:last-child {
@@ -2196,10 +2192,7 @@ $link-hover-color: #2581DC;
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
-    height: 600px; 
-    @media (max-width: 414px) {
-      height: 100%; 
-    }
+    height: 100%; 
   }  
  }
 
@@ -2227,4 +2220,89 @@ $link-hover-color: #2581DC;
     margin-top: 15px;
     text-align: center;
 }
+}
+
+
+//style for select 
+
+/*  = Select */
+.slct {
+  display: block;
+  background: transparent;
+  width: 80px;
+  padding: 0px;
+  color: #444;
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  @media (max-width: 768px) {
+      padding-right: 20px; 
+  }
+}
+.slct.active {
+  border-radius: 5px 5px 0 0;
+  border-bottom: none;
+}
+.drop {
+  margin: 0;
+  padding: 0;
+  border-top: none;
+  display: none;
+  position: absolute;
+  top: -100px;
+  left: 72%;
+  width: 163px;
+  height: 81px;
+  background-color: #2a2929;
+  border-radius: 3px;
+  box-shadow: 0 5px 40px rgba(225, 225, 225, 0.08);
+  @media (max-width: 768px) {
+     top: 190px;
+     left: 60%;
+  }
+}
+.drop-flex {
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.drop li {
+  list-style: none;
+  cursor: pointer;
+  display: block;
+  color: #444;
+  padding: 4px 15px 4px 25px;
+  background-position: 10px -119px;
+    @media (max-width: 768px) {
+     margin: 0; 
+  }
+}
+
+.select {
+  vertical-align: baseline;
+  width: 65px;
+  background: url("../images/header/triangle.png") no-repeat right;
+  background-color: none; 
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+    &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 84%;
+    top: 3px;
+    height: 15px;
+    width: 1px;
+    background: #bdbdbd;
+    @media (max-width:1090px) {
+      display: none;
+    }
+  }
+  &:hover {
+    color: #00adc3;
+  }
 }
